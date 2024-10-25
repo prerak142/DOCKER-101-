@@ -135,8 +135,8 @@ Follow the steps below to set up and run the moving robot simulation using Ignit
 
 1. **Download the Simulation File**
    - Download the robot simulation file from the following link:
-     ```
-    https://github.com/prerak142/DOCKER-101-/blob/main/moving_robot.sdf
+     ```bash
+      https://github.com/prerak142/DOCKER-101-/blob/main/moving_robot.sdf
      ```
    - Save the downloaded file in the folder that you opened in VS Code.
 
