@@ -21,7 +21,7 @@ This repository contains the files required to install Docker and ROS. Go throug
 ### Video Reference
 - [VS Code Setup Video](https://youtu.be/bN6DE-4uFNo?feature=shared)
 
-## Ubuntu Setup on Windows
+## Ubuntu and Docker Setup on Windows
 
 ### Basic Setup
 1. Search for "Turn Windows features on and off".
@@ -30,9 +30,8 @@ This repository contains the files required to install Docker and ROS. Go throug
 ![Screenshot 2024-07-27 110932](https://github.com/user-attachments/assets/14a63d46-4be2-4e31-8dd7-a51f2c569afa)
 ![Screenshot 2024-07-27 113538](https://github.com/user-attachments/assets/df1e554d-ccc8-4cee-94f1-016ea8505b5d)
 
-### Installation and Setup
-- Download Version: Ubuntu 22.04 LTS
-- [Ubuntu on WSL2 Installation Guide](https://linuxsimply.com/linux-basics/os-installation/wsl/ubuntu-on-wsl2/)
+
+---
 
 ## Docker
 
@@ -52,6 +51,47 @@ This repository contains the files required to install Docker and ROS. Go throug
 
 ### Video Tutorial
 - [Docker Setup Video (up to 5:48)](https://youtu.be/dihfA7Ol6Mw?feature=shared) (Note: Download Humble Desktop Full)
+---
+
+## Ubuntu
+
+### Installation and Setup
+- Download Version: Ubuntu 22.04 LTS from microsoft store 
+- [Ubuntu on WSL2 Installation Guide](https://linuxsimply.com/linux-basics/os-installation/wsl/ubuntu-on-wsl2/)
+
+## Step 1: Setting Up Ubuntu
+
+1. **Open the Ubuntu Terminal**:
+   - Search for "Ubuntu" in the Windows Start menu and open it.
+
+2. **Fill in the UNIX Name and Password**:
+   - During the first run, you'll be asked to create a UNIX username and password. Make sure to **remember these details** as they will be needed for future administrative tasks.
+
+## Step 2: Allowing Ubuntu to Run Docker
+
+1. **Start Docker Desktop**:
+   - Open **Docker Desktop** from the Windows Start menu.
+
+2. **Navigate to Settings**:
+   - In Docker Desktop, click the **Settings** button.
+
+3. **Enable WSL 2 Engine**:
+   - Under the **General** tab, select the option **Use WSL 2 based engine**.
+   - If your system supports WSL 2, this option will be turned on by default.
+
+4. **Apply & Restart**:
+   - Click the **Apply & Restart** button to apply the changes.
+
+---
+
+## Step 3: Set Ubuntu 22.04 as the Default WSL Version
+
+1. Open **Command Prompt** or **PowerShell** on your Windows machine.
+
+2. Run the following command to set Ubuntu 22.04 as the default WSL version:
+   ```bash
+   wsl.exe --set-default Ubuntu 22.04
+
 
 ## Using VS Code with Docker
 
@@ -96,7 +136,7 @@ Follow the steps below to set up and run the moving robot simulation using Ignit
 1. **Download the Simulation File**
    - Download the robot simulation file from the following link:
      ```
-     https://github.com/prerak142/docker/blob/main/moving_robot.sdf
+    https://github.com/prerak142/DOCKER-101-/blob/main/moving_robot.sdf
      ```
    - Save the downloaded file in the folder that you opened in VS Code.
 
